@@ -1,0 +1,14 @@
+{
+    "trailingComma": "none",
+    "importOrder": ["^type$"],
+    "arrowParens": "always",
+    "tabWidth": 4,
+    "useTabs": false,
+    "singleQuote": true,
+    "semi": true,
+    "bracketSpacing": true,
+    "jsxSingleQuote": true,
+    "quoteProps": "as-needed",
+    "endOfLine": "auto",
+    "importType": "always"
+}
