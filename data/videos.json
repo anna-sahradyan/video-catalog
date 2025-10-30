@@ -24,7 +24,7 @@
         "title": "Big Buck Bunny",
         "author": "Blender Foundation",
         "durationSec": 125,
-        "publishedAt": "2025-08-01T12:00:00Z",
+        "publishedAt":"2025-09-10T15:00:00Z",
         "thumbnail": "https://picsum.photos/400/225?random=1",
         "url": "https://www.youtube.com/watch?v=gh48wM6bPWQ",
         "is_new": true
@@ -74,7 +74,7 @@
         "title": "Big Buck Bunny",
         "author": "Blender Foundation",
         "durationSec": 125,
-        "publishedAt": "2025-08-01T12:00:00Z",
+        "publishedAt": "2025-09-10T15:00:00Z",
         "thumbnail": "/img-8.jpg",
         "url": "https://www.youtube.com/shorts/Mz-ZVfOA_ig",
         "is_new": true
@@ -84,7 +84,7 @@
         "title": "Big Buck Bunny",
         "author": "Blender Foundation",
         "durationSec": 125,
-        "publishedAt": "2025-08-01T12:00:00Z",
+        "publishedAt": "2025-10-01T12:00:00Z",
         "thumbnail": "/img-9.jpg",
         "url": "https://www.youtube.com/watch?v=GsB8ZI5vREA",
         "is_new": true
