@@ -1,8 +1,8 @@
 [
     {
         "id": "1",
-        "title": "Big Buck Bunny",
-        "author": "Blender Foundation",
+        "title": "Easy Blini Recipe",
+        "author": "Lucy Parissi",
         "durationSec": 125,
         "publishedAt": "2025-08-01T12:00:00Z",
         "thumbnail": "/img-1.jpg",
@@ -11,8 +11,8 @@
     },
     {
         "id": "2",
-        "title": "Yoga for Beginners",
-        "author": "Maria Petrova",
+        "title": "White Chocolate Crème Brulee",
+        "author": "Bear Naked Food",
         "durationSec": 600,
         "publishedAt": "2025-09-10T15:00:00Z",
         "thumbnail": "/img-2.jpg",
@@ -21,8 +21,8 @@
     },
     {
         "id": "3",
-        "title": "Big Buck Bunny",
-        "author": "Blender Foundation",
+        "title": "Simple Beef Brisket |",
+        "author": "Gordon Ramsay",
         "durationSec": 125,
         "publishedAt":"2025-09-10T15:00:00Z",
         "thumbnail": "img-3.jpg",
@@ -31,7 +31,7 @@
     },
     {
         "id": "4",
-        "title": "Big Buck Bunny",
+        "title": "penne rigate",
         "author": "Blender Foundation",
         "durationSec": 125,
         "publishedAt": "2025-08-01T12:00:00Z",
@@ -41,8 +41,8 @@
     },
     {
         "id": "5",
-        "title": "Big Buck Bunny",
-        "author": "Blender Foundation",
+        "title": "Spicy Arrabiata Penne",
+        "author": "Keerthana Cooks",
         "durationSec": 125,
         "publishedAt": "2025-08-01T12:00:00Z",
         "thumbnail": "/img-5.jpg",
@@ -51,8 +51,8 @@
     },
     {
         "id": "6",
-        "title": "Big Buck Bunny",
-        "author": "Blender Foundation",
+        "title": "Jamie’s Bakewell Tart",
+        "author": "Jamie Oliver",
         "durationSec": 125,
         "publishedAt": "2025-08-01T12:00:00Z",
         "thumbnail": "/img-6.jpg",
@@ -61,8 +61,8 @@
     },
     {
         "id": "7",
-        "title": "Big Buck Bunny",
-        "author": "Blender Foundation",
+        "title": "Baked brie cheese",
+        "author": "Deronda",
         "durationSec": 125,
         "publishedAt": "2025-09-01T12:00:00Z",
         "thumbnail": "/img-7.jpg",
@@ -71,8 +71,8 @@
     },
     {
         "id": "8",
-        "title": "Big Buck Bunny",
-        "author": "Blender Foundation",
+        "title": "Montreal Smoked Meat on the Big Green Egg",
+        "author": "BBQ Tom",
         "durationSec": 125,
         "publishedAt": "2025-09-10T15:00:00Z",
         "thumbnail": "/img-8.jpg",
@@ -81,8 +81,8 @@
     },
     {
         "id": "9",
-        "title": "Big Buck Bunny",
-        "author": "Blender Foundation",
+        "title": "Jamie’s Bakewell Tart",
+        "author": "Jamie Oliver",
         "durationSec": 125,
         "publishedAt": "2025-10-01T12:00:00Z",
         "thumbnail": "/img-9.jpg",
@@ -91,8 +91,8 @@
     },
     {
         "id": "10",
-        "title": "Big Buck Bunny",
-        "author": "Blender Foundation",
+        "title": "HBest Toad In The Hole",
+        "author": "Scot Rea",
         "durationSec": 125,
         "publishedAt": "2025-08-01T12:00:00Z",
         "thumbnail": "/img-10.jpg",
