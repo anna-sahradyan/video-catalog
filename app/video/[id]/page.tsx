@@ -3,10 +3,11 @@
 import { getVideoById } from '@/lib/getVideoById';
 import { VideoDetail } from '@/components/VideoDetail';
 
+
 export default async function VideoDetailPage({
     params
 }: {
-    params: { id: string };
+    params: Promise<{ id: string }>;
 }) {
     const resolvedParams = await Promise.resolve(params);
     const { id } = resolvedParams;
@@ -23,7 +24,8 @@ export default async function VideoDetailPage({
 
     return (
         <div className='max-w-4xl mx-auto mt-[130px]'>
-            <VideoDetail video={video} />
+                <VideoDetail video={video} />
+
         </div>
     );
 }

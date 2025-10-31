@@ -4,15 +4,13 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { useState, useMemo, useEffect, useCallback } from 'react';
 import { useDebounce } from '@/hooks/useDebounce';
-import Image from 'next/image';
 import { useRouter, useSearchParams, usePathname } from 'next/navigation';
 import { VideoGrid } from '@/components/VideoGrid';
 import { SearchForm } from '@/components/search-form/SearchForm';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import { TVideo } from '@/types/video';
-import { A11y, Autoplay, Navigation, Pagination } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import Loading from '@/app/loading';
 interface VideoCatalogProps {
     videos: TVideo[];
 }
@@ -144,10 +142,7 @@ export const VideoCatalog: React.FC<VideoCatalogProps> = ({ videos }) => {
                 <SearchForm value={searchQuery} onChange={handleSearchChange} />
 
                 <div className='flex flex-wrap gap-2 mb-4 justify-between'>
-                    <Skeleton width={60} height={28} />
-                    <Skeleton width={80} height={28} />
-                    <Skeleton width={100} height={28} />
-                    <Skeleton width={100} height={28} />
+                    <Loading/>
                 </div>
 
                 <section>
@@ -238,44 +233,6 @@ export const VideoCatalog: React.FC<VideoCatalogProps> = ({ videos }) => {
 
             {filteredVideos.length > 0 && (
                 <>
-                    <section className='mt-8'>
-                        <h2 className='text-xl font-bold mb-4'>Рекомендуем</h2>
-                        <div className='max-w-[700px] mx-auto'>
-                            <Swiper
-                                spaceBetween={20}
-                                slidesPerView={1}
-                                navigation
-                                pagination={{ clickable: true }}
-                                autoplay={{ delay: 3000 }}
-                                modules={[
-                                    Navigation,
-                                    Pagination,
-                                    A11y,
-                                    Autoplay
-                                ]}
-                                className='pb-8'
-                            >
-                                {filteredVideos.slice(0, 3).map((video) => (
-                                    <SwiperSlide key={video.id}>
-                                        <div className='relative w-full h-[500px]'>
-                                            <Image
-                                                src={video.thumbnail}
-                                                alt={video.title}
-                                                fill
-                                                className='object-cover rounded-lg transition-opacity duration-1000 opacity-95 hover:opacity-100'
-                                                unoptimized
-                                            />
-                                            {video.is_new && (
-                                                <span className='absolute top-2 left-2 bg-red-500 text-white px-2 py-1 text-xs rounded'>
-                                                    New
-                                                </span>
-                                            )}
-                                        </div>
-                                    </SwiperSlide>
-                                ))}
-                            </Swiper>
-                        </div>
-                    </section>
 
                     <section className='mt-8'>
                         <h2 className='text-xl font-bold mb-4'>Все видео</h2>

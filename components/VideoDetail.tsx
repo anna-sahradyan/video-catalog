@@ -34,9 +34,11 @@ export const VideoDetail = ({ video }: { video: TVideo }) => {
                     alt={video.title}
                     width={800}
                     height={450}
-                    layout="intrinsic"
                     className="w-full h-auto"
                     priority
+                    onError={(e) => {
+                        (e.target as HTMLImageElement).style.display = 'none';
+                    }}
                 />
             </div>
 
