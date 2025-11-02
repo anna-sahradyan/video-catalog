@@ -25,7 +25,7 @@ export const VideoGrid = ({
     }
 
     return (
-        <div className='grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+        <div className='grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 z-10'>
             {displayedVideos.map((video) => {
                 if (!video || !video.id) {
                     return null;

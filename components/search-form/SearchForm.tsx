@@ -2,13 +2,17 @@
 
 export const SearchForm = ({
                                value,
-                               onChange
+                               onChange,
+
                            }: {
     value: string;
     onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }) => {
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+    };
     return (
-        <form className="w-full max-w-[1000px] mx-auto mb-8 mt-[100px]">
+        <form className="w-full max-w-[1000px] mx-auto mb-8 mt-[100px]" onSubmit={handleSubmit}>
             <div className="relative w-full px-[2]">
                 <input
                     type="search"

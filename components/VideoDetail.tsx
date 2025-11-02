@@ -7,8 +7,8 @@ import Image from 'next/image';
 
 export const VideoDetail = ({ video }: { video: TVideo }) => {
     return (
-        <div className="max-w-4xl mx-auto mt-[130px]">
-            <div className="flex w-full gap-2 max-w-full xs:max-w-full sm:max-w-[50%] justify-between items-center text-center">
+        <div className="max-w-4xl mx-auto mt-[130px] ">
+            <div className="flex w-full gap-2 max-w-full xs:max-w-full sm:max-w-[80%] justify-between items-center text-center">
                 <h1 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-2">
                     {video.title}
                 </h1>

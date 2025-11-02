@@ -11,6 +11,7 @@ import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import { TVideo } from '@/types/video';
 import Loading from '@/app/loading';
+
 interface VideoCatalogProps {
     videos: TVideo[];
 }
@@ -138,28 +139,28 @@ export const VideoCatalog: React.FC<VideoCatalogProps> = ({ videos }) => {
 
     if (!videos) {
         return (
-            <div className='w-full mt-20'>
-                <SearchForm value={searchQuery} onChange={handleSearchChange} />
+            <div className="w-full mt-20">
+                <SearchForm value={searchQuery} onChange={handleSearchChange}  />
 
-                <div className='flex flex-wrap gap-2 mb-4 justify-between'>
-                    <Loading/>
+                <div className="flex flex-wrap gap-2 mb-4 justify-between">
+                    <Loading />
                 </div>
 
                 <section>
-                    <h2 className='text-xl font-bold '>Рекомендуем</h2>
-                    <div className=' w-full max-w-[700px] mx-auto'>
+                    <h2 className="text-xl font-bold ">Рекомендуем</h2>
+                    <div className=" w-full max-w-[700px] mx-auto">
                         <Skeleton height={500} />
                     </div>
                 </section>
 
                 <section>
-                    <h2 className='text-xl font-bold '>Все видео</h2>
-                    <div className='grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+                    <h2 className="text-xl font-bold ">Все видео</h2>
+                    <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                         {[...Array(6)].map((_, index) => (
-                            <div key={index} className='border rounded p-2'>
+                            <div key={index} className="border rounded p-2">
                                 <Skeleton height={180} />
                                 <Skeleton />
-                                <Skeleton width='60%' />
+                                <Skeleton width="60%" />
                             </div>
                         ))}
                     </div>
@@ -169,12 +170,12 @@ export const VideoCatalog: React.FC<VideoCatalogProps> = ({ videos }) => {
     }
 
     return (
-        <div className='w-full mt-20'>
-            <div className='flex items-center justify-center mt-4'>
+        <div className="w-full mt-20 ">
+            <div className="flex items-center justify-center mt-4">
                 <SearchForm value={searchQuery} onChange={handleSearchChange} />
             </div>
 
-            <div className='flex flex-wrap gap-2 justify-between px-2'>
+            <div className="flex flex-wrap gap-2 justify-between px-2">
                 <button
                     onClick={() => handleDurationFilterChange(null)}
                     className={`w-full max-w-[150px] border rounded-lg px-4 py-2 text-sm sm:text-base ${
@@ -218,13 +219,13 @@ export const VideoCatalog: React.FC<VideoCatalogProps> = ({ videos }) => {
             </div>
 
             {filteredVideos.length === 0 && (
-                <div className='flex flex-col items-center justify-center my-8 p-4 bg-gray-100 rounded-lg'>
-                    <p className='text-lg text-gray-700 mb-4'>
+                <div className="flex flex-col items-center justify-center my-8 p-4 bg-gray-100 rounded-lg">
+                    <p className="text-lg text-gray-700 mb-4">
                         Видео не найдены по текущим фильтрам.
                     </p>
                     <button
                         onClick={handleResetFilters}
-                        className='px-6 py-3 bg-blue-600 text-white font-semibold rounded-md shadow-md hover:bg-blue-700 transition-colors duration-300'
+                        className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-md shadow-md hover:bg-blue-700 transition-colors duration-300"
                     >
                         Сбросить фильтры
                     </button>
@@ -234,8 +235,8 @@ export const VideoCatalog: React.FC<VideoCatalogProps> = ({ videos }) => {
             {filteredVideos.length > 0 && (
                 <>
 
-                    <section className='mt-8'>
-                        <h2 className='text-xl font-bold mb-4'>Все видео</h2>
+                    <section className="mt-8">
+                        <h2 className="text-xl font-bold mb-4">Все видео</h2>
                         <VideoGrid
                             videos={filteredVideos}
                             handleCardClick={handleCardClick}
